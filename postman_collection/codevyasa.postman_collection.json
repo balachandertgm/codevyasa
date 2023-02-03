@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "9ad86640-9c14-41e0-a6fc-94c0066748bf",
+		"name": "codevyasa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1763108"
+	},
+	"item": [
+		{
+			"name": "/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"email\": \"alexey@klaim.ai\",\r\n\"password\": \"lkJlkn8hj\",\r\n\"fullname\": \"Alexey Kornilov\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"email\": \"alexey@klaim.ai\",\r\n\"password\": \"lkJlkn8hj\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/profile?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZXhleUBrbGFpbS5haSIsIm5hbWUiOiJBbGV4ZXkgS29ybmlsb3YiLCJpYXQiOjE2NzQ5MTYxNjV9.DKmveqUOdXdPdbNZKRZbES6kYQ3RJygD-EV3hMd6o9c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"profile"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZXhleUBrbGFpbS5haSIsIm5hbWUiOiJBbGV4ZXkgS29ybmlsb3YiLCJpYXQiOjE2NzQ5MTYxNjV9.DKmveqUOdXdPdbNZKRZbES6kYQ3RJygD-EV3hMd6o9c"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/author",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/author?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZXhleUBrbGFpbS5haSIsIm5hbWUiOiJBbGV4ZXkgS29ybmlsb3YiLCJpYXQiOjE2NzQ5MTYxNjV9.DKmveqUOdXdPdbNZKRZbES6kYQ3RJygD-EV3hMd6o9c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"author"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZXhleUBrbGFpbS5haSIsIm5hbWUiOiJBbGV4ZXkgS29ybmlsb3YiLCJpYXQiOjE2NzQ5MTYxNjV9.DKmveqUOdXdPdbNZKRZbES6kYQ3RJygD-EV3hMd6o9c"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/quote",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/quote?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZXhleUBrbGFpbS5haSIsIm5hbWUiOiJBbGV4ZXkgS29ybmlsb3YiLCJpYXQiOjE2NzQ5MTYxNjV9.DKmveqUOdXdPdbNZKRZbES6kYQ3RJygD-EV3hMd6o9c&authorId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"quote"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZXhleUBrbGFpbS5haSIsIm5hbWUiOiJBbGV4ZXkgS29ybmlsb3YiLCJpYXQiOjE2NzQ5MTYxNjV9.DKmveqUOdXdPdbNZKRZbES6kYQ3RJygD-EV3hMd6o9c"
+						},
+						{
+							"key": "authorId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/logout",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/logout?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZXhleUBrbGFpbS5haSIsIm5hbWUiOiJBbGV4ZXkgS29ybmlsb3YiLCJpYXQiOjE2NzQ5MTYxNjV9.DKmveqUOdXdPdbNZKRZbES6kYQ3RJygD-EV3hMd6o9c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"logout"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZXhleUBrbGFpbS5haSIsIm5hbWUiOiJBbGV4ZXkgS29ybmlsb3YiLCJpYXQiOjE2NzQ5MTYxNjV9.DKmveqUOdXdPdbNZKRZbES6kYQ3RJygD-EV3hMd6o9c"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
